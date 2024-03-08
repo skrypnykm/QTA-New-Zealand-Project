@@ -32,20 +32,14 @@ lapply(c("tidyverse",
          "quanteda.textplots",
          "dplyr",
          "gridExtra",
-         "xtable", # For parallel processing
-         "readtext", # for reading in text data
-         "stringi", # for working with character strings
+         "xtable", 
+         "readtext", 
+         "stringi", 
          "textstem",
          "stm",
-         "gridExtra"), 
+         "gridExtra",
+         "wordcloud"), 
        pkgTest)
-
-library(quanteda)
-library(stm) # STM
-library(wordcloud)
-library(ggplot2)
-if(!require(devtools)) install.packages("devtools")
-library("stmBrowser")
 
 #load data
 data <- read.csv("nz20172023.csv")
